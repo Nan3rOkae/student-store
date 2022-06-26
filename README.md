@@ -50,12 +50,12 @@ The following specifications were met on the Express backend and the React front
     - [X] `error` - a variable used to display a message when something goes wrong with the API requests.
     - [X] `isOpen` - a boolean value representing whether or not the `Sidebar.jsx` is in the open or closed state.
     - [X] `shoppingCart` - should store state for the active user's shopping cart (items they want to purchase and the quantity of each item).
-      - [ ] Use whatever data type works best here, but make sure the format the `shoppingCart` as an array before passing it to other components.
-      - [ ] When passed down to other components as a prop, it should formatted as an array of objects.
-      - [ ] Each object in the array should have two fields:
-        - [ ] The `itemId` field should store the `id` of the item being purchased.
-        - [ ] The `quantity` field should store a number representing how many of that item the user is purchasing.
-    - [ ] `checkoutForm` - the user's information that will be sent to the API when they checkout.
+      - [X] Use whatever data type works best here, but make sure the format the `shoppingCart` as an array before passing it to other components.
+      - [X] When passed down to other components as a prop, it should formatted as an array of objects.
+      - [X] Each object in the array should have two fields:
+        - [X] The `itemId` field should store the `id` of the item being purchased.
+        - [X] The `quantity` field should store a number representing how many of that item the user is purchasing.
+    - [X] `checkoutForm` - the user's information that will be sent to the API when they checkout.
   - [ ] Leverage the `useEffect` hook to ensure that when the `App.jsx` component is mounted to the screen...
     - [ ] It should make a `GET` request to the API's `/store` endpoint with the `axios.get` method.
     - [ ] When the request completes successfully, it should store the `products` returned by the response in state.
