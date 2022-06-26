@@ -61,13 +61,13 @@ The following specifications were met on the Express backend and the React front
     - [X] When the request completes successfully, it should store the `products` returned by the response in state.
     - [X] If the request does not complete successfully, or there are no `products` found in the response,
             it should create an error message and store it in the `error` state variable.
-  - [ ] The `App.jsx` component should define handler functions to be passed as props to the `Home` and `ProductDetail` components.
-    - [ ] Define as many as are needed.
-    - [ ] At minimum, **create these five handlers**:
-      - [ ] The **`handleOnToggle`** function. When called...
-        - [ ] It should toggle the open/closed state of the `Sidebar`.
-      - [ ] The **`handleAddItemToCart`** function. When called...
-        - [ ] It should accept a single argument - `productId`
+  - [X] The `App.jsx` component should define handler functions to be passed as props to the `Home` and `ProductDetail` components.
+    - [X] Define as many as are needed.
+    - [X] At minimum, **create these five handlers**:
+      - [X] The **`handleOnToggle`** function. When called...
+        - [X] It should toggle the open/closed state of the `Sidebar`.
+      - [X] The **`handleAddItemToCart`** function. When called...
+        - [X] It should accept a single argument - `productId`
         - [ ] It should add that product to the `shoppingCart` if it doesn't exist, and set its quantity to `1`.
         - [ ] If it does exist, it should increase the quantity by `1`.
         - [ ] It should add the price of the product to the total price of the `shoppingCart`.
