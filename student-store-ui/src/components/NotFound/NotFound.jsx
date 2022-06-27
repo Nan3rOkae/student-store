@@ -6,7 +6,7 @@ export default function NotFound() {
     <div className="notFound">
       <Navbar />
       <Sidebar />
-      <p className="notAvail">Error 404: NOT FOUND</p>
+      <p className="anError">Error 404: NOT FOUND</p>
     </div>
   );
 }
