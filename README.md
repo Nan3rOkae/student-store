@@ -4,7 +4,8 @@
 
 Selling merchandise in the modern era requires digital solutions. For this project, you'll be tasked with designing and constructing an online student store for the College of Codepath. The application entails a frontend user interface for potential customers to peruse the goods, and a backend API to handle data management. The API will be built with Node and Express and the UI will be built with React.
 
-// Include your gif here
+![PROJECT 2 GIF](https://user-images.githubusercontent.com/89530363/176224225-fafc3ab4-fa59-4eea-ba4e-9e8206ac82a5.gif)
+
 
 ### Application Features
 
@@ -290,16 +291,18 @@ The following specifications were met on the Express backend and the React front
 
 * If you had more time, what would you have done differently? Would you have added additional features? Changed the way your project responded to a particular event, etc.
   
--(understand the whole concept of how some functions and how they work)
+-understand the whole concept of how some functions and how they work just a little bit more. Once again I was a little behind due to a slower level of comprehension to the task. I would have also completed the shopping cart on the subnav which would be able to print the total
 
 * Reflect on your project demo, what went well? Were there things that maybe didn't go as planned? Did you notice something that your peer did that you would like to try next time?
 
-- (_______________________________________________________)
+- After demoing, I realized that my about button on the nav bar was not taking the user to the about side of the page, but I can easily fix that by making a new component just for the about navigation
 
 ### Open-source libraries used
 
-- Add any links to open-source libraries used in your project.
+- https://www.digitalocean.com/community/tutorials/how-to-handle-routing-in-react-apps-with-react-router
+- https://getcssscan.com/blog/how-to-inspect-copy-element-css#:~:text=First%2C%20hover%20over%20the%20element,choose%20the%20option%20%E2%80%9CInspect%E2%80%9D.&text=On%20the%20left%20side%20is,%E2%80%9D%20%3E%20%E2%80%9CCopy%20styles%E2%80%9D.
+- https://ultimatecourses.com/blog/react-router-not-found-component
 
 ### Shout out
 
-Give a shout out to somebody from your cohort that especially helped you during your project. This can be a fellow peer, instructor, TA, mentor, etc.
+Would like to thank Moe, lucas, Paul, and Enrique
