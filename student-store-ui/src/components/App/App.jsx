@@ -23,7 +23,7 @@ export default function App() {
   const [shoppingCart, setShoppingCart] = useState([]);
   const [checkoutForm, setcheckoutForm] = useState(null);
   const [subtotal, setSubtotal] = useState(null);
-  let APIurl = `https://codepath-store-api.herokuapp.com/store`;
+  let APIurl = `http://localhost:3001/store`;
 
   useEffect(async () => {
     try {

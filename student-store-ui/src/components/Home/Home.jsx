@@ -97,13 +97,13 @@ export default function Home(props) {
     }
   };
 
-  var searchItems = props.products.filter((datum) => {
-    return datum.name.toLowerCase().includes(searchText.toLowerCase());
+  var searchItems = props.products.filter((data) => {
+    return data.name.toLowerCase().includes(searchText.toLowerCase());
   });
 
   if (selectedCategory != "") {
-    searchItems = searchItems.filter((datum) => {
-      return datum.category === selectedCategory;
+    searchItems = searchItems.filter((data) => {
+      return data.category === selectedCategory;
     });
   }
 
