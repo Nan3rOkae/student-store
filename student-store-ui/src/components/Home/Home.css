@@ -42,15 +42,15 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex-grow: 1;
+  flex-grow: 3;
   flex-shrink: 1;
-  flex-basis: 0%;
-  margin-right: 40px;
+  flex-basis: 20%;
+  margin-right: 20px;
 }
 
 .sub-navbar .content .search-bar input {
   height: 40px;
-  padding-left: 15px;
+  padding-left: 50px;
   padding-top: 0px;
   padding-right: 15px;
   padding-bottom: 0px;
@@ -63,7 +63,7 @@
   flex-shrink: 1;
   flex-basis: 0%;
   font-size: 16px;
-  width: 500px;
+  width: 10px;
   transform: translateX(-180px);
 }
 

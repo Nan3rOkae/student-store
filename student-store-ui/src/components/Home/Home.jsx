@@ -61,13 +61,7 @@ export default function Home(props) {
               <i className="material-icons">search</i>
             </div>
             <div className="links">
-              <span className="help">
-                <i className="material-icons">help</i>
-                Help
-              </span>
-              <div className="cart" onClick={resetButton}>
-                Reset Cart
-              </div>
+              <span className="help"></span>
             </div>
           </div>
 
@@ -75,13 +69,7 @@ export default function Home(props) {
             <div className="menu"></div>
             <ul
               className={open ? "category-menu open" : "category-menu closed"}
-            >
-              <button>All Categories</button>
-              <button>Clothing</button>
-              <button>Food</button>
-              <button>Accessories</button>
-              <button>Tech</button>
-            </ul>
+            ></ul>
           </div>
         </div>
       </nav>

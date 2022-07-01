@@ -42,6 +42,7 @@
 }
 .toggle-button.open {
   transform: rotate(180deg);
+  display: inline-block;
 }
 
 .allitems {
