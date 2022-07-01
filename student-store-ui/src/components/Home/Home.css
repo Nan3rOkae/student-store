@@ -125,16 +125,6 @@
   margin-right: 5px;
 }
 
-.sub-navbar .hamburger-menu {
-  margin-right: 40px;
-}
-
-.sub-navbar .hamburger-menu i {
-  cursor: pointer;
-  color: #969696;
-  transform: translateY(-3px);
-}
-
 .sub-navbar .category-menu {
   display: flex;
   flex-direction: row;
@@ -149,11 +139,6 @@
 
 .sub-navbar .category-menu.closed {
   display: none;
-}
-
-.hamburger-menu .li {
-  display: list-item;
-  text-align: -webkit-match-parent;
 }
 
 .sub-navbar .category-menu li button {

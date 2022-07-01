@@ -17,7 +17,6 @@ export default function App() {
   };
 
   const [products, setProducts] = useState([]);
-  const [isFetching, setIsFetching] = useState(null);
   const [error, setError] = useState(null);
   const [isOpen, setIsOpen] = useState(null);
   const [shoppingCart, setShoppingCart] = useState([]);

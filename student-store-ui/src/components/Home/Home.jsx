@@ -8,7 +8,6 @@ import Contact from "../Contact/Contact";
 import { useState } from "react";
 
 export default function Home(props) {
-  const [open, setOpen] = useState(true);
   const [all, setAll] = useState(null);
   const [clothing, setClothing] = useState(null);
   const [food, setFood] = useState(null);
@@ -21,80 +20,8 @@ export default function Home(props) {
     setSearchText(event.target.value);
   };
 
-  const handleToggle = () => {
-    if (open) {
-      setOpen(false);
-    } else {
-      setOpen(true);
-    }
-  };
-
-  const handleReset = () => {
+  const resetButton = () => {
     props.setShoppingCart([]);
-  };
-
-  const handleAll = () => {
-    if (all) {
-      setAll(false);
-    } else {
-      setAll(true);
-      setClothing(false);
-      setFood(false);
-      setTech(false);
-      setAccessories(false);
-      setSelectedCategory("");
-    }
-  };
-  const handleClothing = () => {
-    if (clothing) {
-      setClothing(false);
-    } else {
-      setClothing(true);
-      setAll(false);
-
-      setFood(false);
-      setTech(false);
-      setAccessories(false);
-      setSelectedCategory("clothing");
-    }
-  };
-  const handleFood = () => {
-    if (food) {
-      setFood(false);
-    } else {
-      setFood(true);
-      setAll(false);
-      setClothing(false);
-
-      setTech(false);
-      setAccessories(false);
-      setSelectedCategory("food");
-    }
-  };
-  const handleAccessories = () => {
-    if (accessories) {
-      setAccessories(false);
-    } else {
-      setAccessories(true);
-      setAll(false);
-      setClothing(false);
-      setFood(false);
-      setTech(false);
-      setSelectedCategory("accessories");
-    }
-  };
-  const handleTech = () => {
-    if (tech) {
-      setTech(false);
-    } else {
-      setTech(true);
-      setAll(false);
-      setClothing(false);
-      setFood(false);
-
-      setAccessories(false);
-      setSelectedCategory("tech");
-    }
   };
 
   var searchItems = props.products.filter((data) => {
@@ -138,52 +65,22 @@ export default function Home(props) {
                 <i className="material-icons">help</i>
                 Help
               </span>
-              <div className="cart" onClick={handleReset}>
+              <div className="cart" onClick={resetButton}>
                 Reset Cart
-                <i className="material-icons">shopping_cart</i>
               </div>
             </div>
           </div>
 
           <div className="row">
-            <div className="hamburger-menu">
-              <i className="material-icons" onClick={() => handleToggle()}>
-                menu
-              </i>
-            </div>
+            <div className="menu"></div>
             <ul
               className={open ? "category-menu open" : "category-menu closed"}
             >
-              <li
-                className={all ? "is-active" : "is-inactive"}
-                onClick={() => handleAll()}
-              >
-                <button>All Categories</button>
-              </li>
-              <li
-                className={clothing ? "is-active" : "is-inactive"}
-                onClick={() => handleClothing()}
-              >
-                <button>Clothing</button>
-              </li>
-              <li
-                className={food ? "is-active" : "is-inactive"}
-                onClick={() => handleFood()}
-              >
-                <button>Food</button>
-              </li>
-              <li
-                className={accessories ? "is-active" : "is-inactive"}
-                onClick={() => handleAccessories()}
-              >
-                <button>Accessories</button>
-              </li>
-              <li
-                className={tech ? "is-active" : "is-inactive"}
-                onClick={() => handleTech()}
-              >
-                <button>Tech</button>
-              </li>
+              <button>All Categories</button>
+              <button>Clothing</button>
+              <button>Food</button>
+              <button>Accessories</button>
+              <button>Tech</button>
             </ul>
           </div>
         </div>
