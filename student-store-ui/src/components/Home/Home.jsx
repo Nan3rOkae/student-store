@@ -8,20 +8,11 @@ import Contact from "../Contact/Contact";
 import { useState } from "react";
 
 export default function Home(props) {
-  const [all, setAll] = useState(null);
-  const [clothing, setClothing] = useState(null);
-  const [food, setFood] = useState(null);
-  const [accessories, setAccessories] = useState(null);
-  const [tech, setTech] = useState(null);
   const [selectedCategory, setSelectedCategory] = useState("");
   const [searchText, setSearchText] = useState("");
 
   const handleOnTextChange = (event) => {
     setSearchText(event.target.value);
-  };
-
-  const resetButton = () => {
-    props.setShoppingCart([]);
   };
 
   var searchItems = props.products.filter((data) => {

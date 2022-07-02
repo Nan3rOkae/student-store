@@ -10,7 +10,7 @@ export default function ShoppingCart({
 }) {
   var subprice = Math.round(subtotal * 100) / 100;
 
-  var taxes = subprice * 0.0875;
+  var taxes = subprice * 0.052;
   var total = subprice + taxes;
 
   total = Math.round(total * 100) / 100;
